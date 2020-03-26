@@ -12,6 +12,7 @@
       <div class="col-md-2">
         <button
           class="btn btn-info"
+          :disabled="isValidQuote===false"
           @click="addQuote"
         >
           Add
@@ -27,6 +28,11 @@ export default {
         return{
             quote:''
         }
+    },
+    computed:{
+      isValidQuote:function(){
+        return this.quote !== ''
+      }
     },
     methods:{
         addQuote(){
