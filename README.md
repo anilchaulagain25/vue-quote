@@ -1,4 +1,5 @@
 # vue-quote
+A sample project using Vue JS using single file template, custom events and props. available at https://vue-quote-ten.now.sh/.
 
 ## Project setup
 ```
